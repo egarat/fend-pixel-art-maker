@@ -10,6 +10,15 @@ $('#sizePicker').on('submit', (evt) => {
     makeGrid(gridWidth, gridHeight);
 });
 
+// Listen for clicks in table cell to fill color
+$('#pixel_canvas').on('click', 'td', function() {
+    // Get selected color from picker
+    const color = $('#colorPicker').val();
+
+    // Apply color to clicked cell
+    $(this).css('background-color', color);
+});
+
 // Function to create canvas grid with HTML table
 // width and height need to be passed to the function
 function makeGrid(width, height) {
