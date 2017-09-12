@@ -1,10 +1,27 @@
-// Select color input
-// Select size input
+// Listen for form submit to create canvas grid
+$('#sizePicker').on('submit', (evt) => {
+    // Prevent form submit from reloading the page
+    evt.preventDefault();
+    
+    // Retrieving user input for grid size
+    const gridHeight = $('#input_height').val();
+    const gridWidth = $('#input_width').val();
 
-// When size is submitted by the user, call makeGrid()
+    makeGrid(gridWidth, gridHeight);
+});
 
-function makeGrid() {
+// Function to create canvas grid with HTML table
+// width and height need to be passed to the function
+function makeGrid(width, height) {
+    let html = '';
+    
+    for(let y = 0; y < height; y++) {
+        html += '<tr>';
+        for(let x = 0; x < width; x++) {
+            html += '<td></td>';
+        }
+        html += '</tr>';
+    }
 
-// Your code goes here!
-
+    $('#pixel_canvas').html(html);
 }
