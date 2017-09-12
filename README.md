@@ -1,16 +1,11 @@
 # Pixel Art Maker Project
 
-## Table of Contents
-
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+Pixel Art Maker is a single web page that lets the user create a canvas grid to create simple pixel images.
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+Download the project and open index.html or simply click [here](https://egarat.github.io/fend-pixel-art-maker/) to play around.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Notice
 
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This project is done as part of the Front-End Web Developer Nanodegree program by [Udacity](https://www.udacity.com). To get the starter files of this project click [here](https://github.com/udacity/project-pixel-art-maker-starter).
