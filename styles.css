@@ -36,3 +36,8 @@ td {
 input[type=number] {
     width: 6em;
 }
+
+input[type=number]:invalid {
+    outline-color: red;
+    border: solid 1px red;
+}
